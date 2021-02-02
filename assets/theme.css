@@ -2,13 +2,38 @@
 
 /* Global Styles */
 :root {
-    --primary-color: #dc3545;
-    --dark-color: #333333;
-    --light-color: #f4f4f4;
-    --danger-color: #dc3545;
-    --success-color: #28a745;
+    --primary-blue: #0668e5;
+    --white: #ffff;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.cta-menu {
+
+}
+
+#topbar {
+    text-align: center;
+    height: 52px;
+    color: var(--white);
+    background-color: var(--primary-blue);
+}
+
+#topbar .cta-menu .b1,
+#topbar .cta-menu .b2,
+#topbar .cta-menu .b3 {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -13px;
+    width: 26px;
+    height: 1px; */
+    background-color: #fff;
+}
+
+
+.none {
+    display: none;
 }
