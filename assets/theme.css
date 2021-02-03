@@ -1,39 +1,104 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+    font-family: "Sofia W01 Regular";
+    src: url("./fonts/7c12b32a-1827-4e7a-ac06-d297c8e38fd6.eot?#iefix");
+    src: url("./fonts/7c12b32a-1827-4e7a-ac06-d297c8e38fd6.eot?#iefix") format("eot"), url("./fonts/ca884294-cd6e-4910-b0e9-2b25a4258900.woff2") format("woff2"), url("./fonts/a330d79c-2615-44af-8109-70f0fafae0b0.woff") format("woff"), url("./fonts/3649f605-deb6-4cc1-ad4b-265287e6e864.ttf") format("truetype"), url("./fonts/39e687a3-2d9e-4b0f-b615-f91939d9509a.svg#39e687a3-2d9e-4b0f-b615-f91939d9509a") format("svg");
+}
+
+@font-face {
+    font-family: "Sofia W01 Bold";
+    src: url("../fonts/24cf60c7-025c-4dd5-abfa-7f897b6dfaf7.eot?#iefix");
+    src: url("../fonts/24cf60c7-025c-4dd5-abfa-7f897b6dfaf7.eot?#iefix") format("eot"), url("../fonts/a6dd5a63-ca74-4be1-ac43-8ee01fcf8ba0.woff2") format("woff2"), url("../fonts/01f00d05-4605-41e6-9fec-a55b00e39c0d.woff") format("woff"), url("../fonts/9f875cbb-ca7a-4bdf-9d63-06ee3b53eba4.ttf") format("truetype"), url("../fonts/4dfd796d-7ed6-44ff-9249-9650ecc50334.svg#4dfd796d-7ed6-44ff-9249-9650ecc50334") format("svg");
+}
 
 /* Global Styles */
 :root {
     --primary-blue: #0668e5;
+    --dark-blue: #26262e;
     --white: #ffff;
 }
 
+h1,
+h2 {
+    font-family: "Sofia W01 Bold", arial, tahoma, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Sofia W01 Regular",
+        arial,
+        tahoma,
+        sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    height: 1000000vh;
 }
 
-.cta-menu {
-
+.none {
+    display: none;
 }
+
+/*-------------------------------------------------------------- # 
+Header 
+--------------------------------------------------------------*/
 
 #topbar {
-    text-align: center;
-    height: 52px;
     color: var(--white);
     background-color: var(--primary-blue);
 }
 
-#topbar .cta-menu .b1,
-#topbar .cta-menu .b2,
-#topbar .cta-menu .b3 {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -13px;
-    width: 26px;
-    height: 1px; */
-    background-color: #fff;
+.cta-menu .line {
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    margin: 6px 0;
 }
 
 
-.none {
-    display: none;
+
+.logo {
+    height: 30px;
+}
+
+
+/*-------------------------------------------------------------- # 
+Footer
+--------------------------------------------------------------*/
+footer {
+    background-color: var(--dark-blue);
+}
+
+.footer-item {
+    width: 24%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+ul li.title a,
+.f-item ul li.title a:hover {
+    color: #fff;
+}
+
+ul li a,
+.f-item ul li a:hover {
+    color: #a8a8ab;
+    text-decoration: none;
+}
+
+ul li.title {
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+
+.copyright {
+    color: var(--white);
+    padding: 20px 40px;
+}
+
+.footer-bottom {
+    color: #fff;
+    padding: 20px;
 }
